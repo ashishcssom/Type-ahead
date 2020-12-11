@@ -33,22 +33,28 @@ This model takes long string ,split that string into a list of 2-elem list. Fina
             __init__.py
 
 # How to train the model?
+```python
     # Train a model on default dataset
     import src
     src.model.train_bigtxt()
+```
 # How to predict words with same prefix?
+```python
     import src
     src.load()
     src.predict('some')
+```
 # How to predict next word?
+```python
     import src
     src.load()
     src.predict('gold',"m")
+```
 # How to host the model in production?
 Open the command line and run following command
-    
+```python
     python server.py
-
+```
 # How to access the result?
     import requests
     url= 'http://localhost:5000/TypeAhead/gold/m'
